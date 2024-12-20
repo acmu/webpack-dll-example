@@ -1,0 +1,30 @@
+.DS_Store
+/node_modules/
+/src/**/node_modules/
+/src/**/.nyc_output/
+/src/**/coverage/
+
+/dist/
+
+.idea
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# lerna
+lerna-debug.log
+
+# yarn
+yarn.lock
+
+# Eslint
+ESLintReport.html
+.history
+
+# python
+get-pip.py
+
+# 自动切换 node 版本
+.nvmrc
