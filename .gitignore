@@ -25,6 +25,3 @@ ESLintReport.html
 
 # python
 get-pip.py
-
-# 自动切换 node 版本
-.nvmrc

@@ -3,6 +3,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const webpack = require('webpack');
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 module.exports = {
   mode: 'development', // 可根据需要设置为 'production'
@@ -26,6 +27,7 @@ module.exports = {
     ]
   },
   plugins: [
+    new BundleAnalyzerPlugin(),
     new CleanWebpackPlugin({
       cleanOnceBeforeBuildPatterns: ['**/*', '!dll/**'],
     }),
@@ -57,6 +59,12 @@ module.exports = {
         publicPath: '/dll',
       }
     ],
+    open: {
+      target: ['home.html'],
+      app: {
+        name: ['chrome']
+      }
+    },
     port: 9000,
     // open: true
   }

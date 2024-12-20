@@ -1,21 +1,21 @@
+import moment from 'moment';
 import _ from 'lodash';
-// import moment from 'moment';
 
-// function component() {
-//   const element = document.createElement('div');
+function component() {
+  const element = document.createElement('div');
 
-//   element.innerHTML = `
-//     <h1>About Page</h1>
-//     <p>Current Time: ${moment().format('LLLL')}</p>
-//     <p>Lodash version: ${_.VERSION}</p>
-//   `;
+  element.innerHTML = `
+    <h1>About Page</h1>
+    <p>Current Time: ${moment().format('LLLL')}</p>
+    <p>Lodash version: ${_.VERSION}</p>
+  `;
 
-//   return element;
-// }
+  return element;
+}
 
-// document.body.appendChild(component());
+document.body.appendChild(component());
 
 
-console.log('first', _.VERSION)
+// console.log('first', _.VERSION)
 
-document.body.appendChild(document.createElement('div')).innerText = 'About Page'
+// document.body.appendChild(document.createElement('div')).innerText = 'About Page'
